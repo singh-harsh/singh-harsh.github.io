@@ -3982,6 +3982,12 @@ body.cv {
     margin-bottom: 10px;
 }
 
+@media screen and (max-width: 450px) {
+    .skills img {
+        height: 45px;
+    }
+}
+
 .skills .skill {
     display: flex;
     align-items: center;
