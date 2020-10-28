@@ -3989,12 +3989,12 @@ section {
     position: relative;
 }
 
-#education {
+#education, #contact {
     height: 100vh;
 }
 
 @media screen and (max-width:1200px) {
-    #education {
+    #education, #contact {
         height: auto;
     }
 }

@@ -9,27 +9,29 @@ function onReady() {
     var e = document.querySelector && document.querySelector("html");
     e && (e.className += " " + platformClassName)
 
-    $(".scroll").click(function (event) {
-        event.preventDefault();
-        $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 800);
-    });
-
-    var $lis = $(".navigation-extendable ul li").click(function (e) {
-        $lis.removeClass('current');
-        $(this).addClass('current');
-    })
-
     // Cache selectors
     var lastId,
         topMenu = $("#top-menu"),
         topMenuHeight = topMenu.outerHeight() + 15,
         // All list items
-        menuItems = topMenu.find("a")
+        menuItems = $(".navigation-extendable").find("a"),
         // Anchors corresponding to menu items
         scrollItems = menuItems.map(function () {
-            var item = $($(this).attr("href"));
-            if (item.length) { return item; }
+            var tmp = $(this).attr("href");
+            if (tmp.includes("#")) {
+                var item = $($(this).attr("href"));
+                if (item.length) { return item; }
+            }
         });
+
+    menuItems.click(function (e) {
+        var href = $(this).attr("href"),
+            offsetTop = href === "#" ? 0 : $(href).offset().top;
+        $('html, body').stop().animate({
+            scrollTop: offsetTop
+        }, 300);
+        e.preventDefault();
+    });
 
     // Bind to scroll
     $(window).scroll(function () {
