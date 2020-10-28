@@ -3322,7 +3322,9 @@ html:not(.platform-mac) .site-sidebar .block-blog {
 }
 
 .tech-tags a, .tech-tags a:hover {
-    background-color: rgba(175, 34, 34, .8)
+    background-color: rgba(175, 34, 34, .8);
+    text-decoration: none;
+    border-radius: 15px;
 }
 
 @media screen and (max-width:767px) {
@@ -3972,6 +3974,7 @@ body.cv {
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .skills img {
@@ -3983,11 +3986,21 @@ body.cv {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 0px 20px;
+    padding: 20px 20px;
 }
 
 section {
     padding-bottom: 30px;
     padding-top: 0;
     position: relative;
+}
+
+#education {
+    height: 100vh;
+}
+
+@media screen and (max-width:1000px) {
+    #education {
+        height: auto;
+    }
 }
