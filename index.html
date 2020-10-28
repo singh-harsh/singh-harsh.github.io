@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="css/main.css">
     <script type="text/javascript" src="js/main.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body class="parent-portfolio">
@@ -44,10 +44,10 @@
 
                 <div class="navigation-extendable">
                     <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#education">Education</a></li>
-                        <li class=""><a href="#skills">Technical Skills</a></li>
-                        <li class=""><a href="#professional-experience">Professional Experience</a></li>
+                        <li class="current"><a class="scroll" href="#about">About</a></li>
+                        <li class=""><a class="scroll" href="#education">Education</a></li>
+                        <li class=""><a class="scroll" href="#skills">Technical Skills</a></li>
+                        <li class=""><a class="scroll" href="#professional-experience">Professional Experience</a></li>
                         <li class=""><a href="/contact/">Contact me</a></li>
                     </ul>
                     <ul>
@@ -75,319 +75,316 @@
         </div>
     </aside>
 
-    <div style="display: flex; flex-direction: column;">
-
-        <!-- ABOUT -->
-        <section id="about" class="site-main">
-            <div class="site-main-inner">
-                <div class="home-section">
-                    <div class="home-section-inner">
-                        <div class="home-heading">
-                            Hi, I'm Harsh Vardhan Singh,
-                        </div>
-
-                        <h2 class="home-subheading">
-                            Learning is a never-ending process and that's why I am highly driven by innovation and disruptive technologies,
-                            searching new vistas in the field of development which makes an impact on human lives at the end of the day.
-                        </h2>
+    <!-- ABOUT -->
+    <section id="about" class="site-main">
+        <div class="site-main-inner">
+            <div class="home-section">
+                <div class="home-section-inner">
+                    <div class="home-heading">
+                        Hi, I'm Harsh Vardhan Singh,
                     </div>
+
+                    <h2 class="home-subheading">
+                        Learning is a never-ending process and that's why I am highly driven by innovation and disruptive technologies,
+                        searching new vistas in the field of development which makes an impact on human lives at the end of the day.
+                    </h2>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- EDUCATION -->
-        <section id="education" class="site-main">
-            <div class="site-main-inner">
-                <div class="main-section portfolio-section">
-                    <h1 class="main-title">Education</h1> <br />
-                    <div class="timeline portfolio-timeline">
-                        <ul>
-                            <li class="timeline_element timeline_element--now project">
-                                <div class="timeline_element-date">
-                                    <time class="timeline_element-date-text">Sep 2017 - May 2019</time>
-                                </div>
-                                <div class="timeline_element-contents">
-                                    <div class="project-text">
-                                        <div class="project-description">
-                                            <h3>Northeastern University, Boston, MA</h3>
-                                            <strong>Master of Science in Information Systems</strong> <br />
-                                            <div class="project-technologies">
-                                                <div class="technologies-title">Relevant Courses</div>
-                                                <ul class="tech-tags">
-                                                    <li><a>Application Development Engineering</a></li>
-                                                    <li><a>Data Structures and Algorithms</a></li>
-                                                    <li><a>Networking and Cloud Computing</a></li>
-                                                    <li><a>Web Design and Development</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="timeline_element timeline_element--now project">
-                                <div class="timeline_element-date">
-                                    <time class="timeline_element-date-text">Jun 2008 - Jun 2012</time>
-                                </div>
-
-                                <div class="timeline_element-contents">
-                                    <div class="project-text">
-                                        <div class="project-description">
-                                            <h3>Anand Engineering College, Agra, India</h3>
-                                            <strong>Bachelor of Engineering in Information Technology</strong> <br />
-                                            <div class="project-technologies">
-                                                <div class="technologies-title">Relevant Courses</div>
-                                                <ul class="tech-tags">
-                                                    <li><a>Java</a></li>
-                                                    <li><a>Object oriented systems (OOPs)</a></li>
-                                                    <li><a>Web technology</a></li>
-                                                    <li><a>Database management systems</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- SKILLS -->
-
-        <section id="skills" class="site-main">
-            <div class="site-main-inner">
-                <div class="main-section portfolio-section">
-                    <h1 class="main-title">Technical Skills</h1> <br />
-                    <div class="skill-card">
-                        <h3>Programming Languages/Framework</h3>
-                        <hr>
-                        <div class="skills">
-                            <div class="skill">
-                                <img src="images/java.png">
-                                <strong>Java</strong>
+    <!-- EDUCATION -->
+    <section id="education" class="site-main">
+        <div class="site-main-inner">
+            <div class="main-section portfolio-section">
+                <h1 class="main-title">Education</h1> <br />
+                <div class="timeline portfolio-timeline">
+                    <ul>
+                        <li class="timeline_element timeline_element--now project">
+                            <div class="timeline_element-date">
+                                <time class="timeline_element-date-text">Sep 2017 - May 2019</time>
                             </div>
-                            <div class="skill">
-                                <img src="images/go.png">
-                                <strong>GoLang</strong>
-                            </div>
-                            <div class="skill">
-                                <img src="images/c-sharp.png">
-                                <strong>C#</strong>
-                            </div>
-                            <div class="skill">
-                                <img src="images/dot-net.png">
-                                <strong>Asp.Net</strong>
-                            </div>
-                            <div class="skill">
-                                <img src="images/api.png">
-                                <strong>Web API</strong>
-                            </div>
-                            <div class="skill">
-                                <img src="images/spring.png">
-                                <strong>Spring</strong>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill-card">
-                        <h3>Web Technologies</h3>
-                        <hr>
-                        <div class="skills">
-                            <div class="skill">
-                                <img src="images/angular.png">
-                                <strong>Angular</strong>
-                            </div>
-                            <div class="skill">
-                                <img src="images/nodejs.png">
-                                <strong>Nodejs</strong>
-                            </div>
-                            <div class="skill">
-                                <img src="images/jquery.png">
-                                <strong>jQuery</strong>
-                            </div>
-                            <div class="skill">
-                                <img src="images/html5.png">
-                                <strong>Html5</strong>
-                            </div>
-                            <div class="skill">
-                                <img src="images/css3.png">
-                                <strong>CSS</strong>
-                            </div>
-                            <div class="skill">
-                                <img src="images/bootstrap.png">
-                                <strong>Bootstrap</strong>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill-card">
-                        <h3>Tools</h3>
-                        <hr>
-                        <div class="skills">
-                            <div class="skill">
-                                <img src="images/eclipse.png">
-                                <strong>Eclipse</strong>
-                            </div>
-                            <div class="skill">
-                                <img src="images/Visual_Studio_2017_Logo.svg">
-                                <strong>Visual Studio</strong>
-                            </div>
-                            <div class="skill">
-                                <img src="images/ms-sql.png">
-                                <strong>MsSQL</strong>
-                            </div>
-                            <div class="skill">
-                                <img src="images/mysql.png">
-                                <strong>MySQL</strong>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill-card">
-                        <h3>Database</h3>
-                        <hr>
-                        <div class="skills">
-                            <div class="skill">
-                                <img src="images/mongodb.png">
-                                <strong>MongoDB</strong>
-                            </div>
-                            <div class="skill">
-                                <img src="images/postgresql.png">
-                                <strong>PostgreSQL</strong>
-                            </div>
-                            <div class="skill">
-                                <img src="images/ms-sql.png">
-                                <strong>MsSQL</strong>
-                            </div>
-                            <div class="skill">
-                                <img src="images/mysql.png">
-                                <strong>MySQL</strong>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="skill-card">
-                        <h3>Other</h3>
-                        <hr>
-                        <div class="skills">
-                            <div class="skill">
-                                <img src="images/Amazon_Web_Services_Logo.svg">
-                                <strong>AWS</strong>
-                            </div>
-                            <div class="skill">
-                                <img src="images/Jenkins_logo.svg">
-                                <strong>Jenkins</strong>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- PROFESSIONAL EXPERIENCE -->
-        <section id="professional-experience" class="site-main">
-            <div class="site-main-inner">
-                <div class="main-section portfolio-section">
-                    <h1 class="main-title">Professional Experience</h1> <br />
-                    <div class="timeline portfolio-timeline">
-                        <ul>
-                            <li class="timeline_element timeline_element--now project">
-                                <div class="timeline_element-date">
-                                    <time class="timeline_element-date-text">Jul 2019- Now</time>
-                                </div>
-                                <div class="timeline_element-contents">
-                                    <div class="project-text">
-                                        <a href="https://www.casenetllc.com/" target="_blank" class="project-link">
-                                            <div class="project-title">Casenet LLC, Bedford, MA</div>
-                                            <div class="project-subtitle">DevOps Engineer</div>
-                                        </a>
-                                        <div class="project-description">
-                                            <p><strong>Tripsomnia is a web platform that allows to book and sell local tours and tourist attractions all over the world. It serves both as:</strong></p>
-
-                                            <ul>
-                                                <li>a SaaS platform for tour operators and activity providers, to manage their offers, customers, orders, and agents cooperation,</li>
-                                                <li>a marketplace for end-customers to book the local tours and activities while or before the travelling.</li>
+                            <div class="timeline_element-contents">
+                                <div class="project-text">
+                                    <div class="project-description">
+                                        <h3>Northeastern University, Boston, MA</h3>
+                                        <strong>Master of Science in Information Systems</strong> <br />
+                                        <div class="project-technologies">
+                                            <div class="technologies-title">Relevant Courses</div>
+                                            <ul class="tech-tags">
+                                                <li><a>Application Development Engineering</a></li>
+                                                <li><a>Data Structures and Algorithms</a></li>
+                                                <li><a>Networking and Cloud Computing</a></li>
+                                                <li><a>Web Design and Development</a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
-                            </li>
-                            <li class="timeline_element timeline_element--now project">
-                                <div class="timeline_element-date">
-                                    <time class="timeline_element-date-text">Jun 2018- Aug 2018</time>
-                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline_element timeline_element--now project">
+                            <div class="timeline_element-date">
+                                <time class="timeline_element-date-text">Jun 2008 - Jun 2012</time>
+                            </div>
 
-                                <div class="timeline_element-contents">
-                                    <div class="project-text">
-                                        <a href="https://www.monster.com/about/" target="_blank" class="project-link">
-                                            <div class="project-title">Monster Worldwide, Weston, MA</div>
-                                            <div class="project-subtitle">Software Engineer Intern</div>
-                                        </a>
-                                        <div class="project-description">
-                                            <p><strong>Release Automation Team</strong></p>
-                                            <ul>
-                                                <li>Automated the process of invalidating the Amazon Machine Images using Web API with Test-driven development</li>
-                                                <li>Designed an interface to view, multi-select CloudFormation Stacks and invalidate the images</li>
-                                                <li>Implemented the real-time update for the CloudFormation Stacks status using SignalR</li>
+                            <div class="timeline_element-contents">
+                                <div class="project-text">
+                                    <div class="project-description">
+                                        <h3>Anand Engineering College, Agra, India</h3>
+                                        <strong>Bachelor of Engineering in Information Technology</strong> <br />
+                                        <div class="project-technologies">
+                                            <div class="technologies-title">Relevant Courses</div>
+                                            <ul class="tech-tags">
+                                                <li><a>Java</a></li>
+                                                <li><a>Object oriented systems (OOPs)</a></li>
+                                                <li><a>Web technology</a></li>
+                                                <li><a>Database management systems</a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
-                            </li>
-                            <li class="timeline_element timeline_element--now project">
-                                <div class="timeline_element-date">
-                                    <time class="timeline_element-date-text">2013 – 2017</time>
-                                </div>
-                                <div class="timeline_element-contents">
-                                    <div class="project-text">
-                                        <a href="https://www.tcs.com/" target="_blank" class="project-link">
-                                            <div class="project-title">Tata Consultancy Services, Pune, INDIA</div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="timeline_element timeline_element--now project">
-                                <div class="timeline_element-date">
-                                    <time class="timeline_element-date-text">Mar 2014 – Jul 2017</time>
-                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                                <div class="timeline_element-contents" style="border-top: 0;">
-                                    <div class="project-text">
-                                        <div class="project-subtitle">Information Technology Analyst (.Net developer)</div>
-                                        <div class="project-description">
-                                            <p><strong>United Airlines</strong></p>
-                                            <ul>
-                                                <li>Supervised the team, held code reviews, met deadlines and successfully achieved 99% customer satisfaction</li>
-                                                <li>Proposed and implemented automation of status report generation and submission to reduce time-effort by ~20%</li>
-                                                <li>Implemented account level process improvement for automating the desktop time zone to Central Standard Time</li>
-                                                <li>Automated email sending service for timesheet filling, daily tracker, and leave updates</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="timeline_element timeline_element--now project">
-                                <div class="timeline_element-date">
-                                    <time class="timeline_element-date-text">Jun 2013 – Mar 2014</time>
-                                </div>
+    <!-- SKILLS -->
 
-                                <div class="timeline_element-contents">
-                                    <div class="project-text">
-                                        <div class="project-subtitle">System Engineer (.NET developer)</div>
-                                        <div class="project-description">
-                                            <p><strong>British Gas: Queensland Gas Company (QGC)</strong></p>
-                                            <ul>
-                                                <li>Automated the manual task of repetitive searching of data from Big Data, thus reducing the lead time</li>
-                                                <li>Submitted business proposal for developing a user interface to directly enter oilfield data and inserting them into the database,
-                                                    reducing the manual data entry efforts hence reducing manual efforts by ~30%</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
+    <section id="skills" class="site-main">
+        <div class="site-main-inner">
+            <div class="main-section portfolio-section">
+                <h1 class="main-title">Technical Skills</h1> <br />
+                <div class="skill-card">
+                    <h3>Programming Languages/Framework</h3>
+                    <hr>
+                    <div class="skills">
+                        <div class="skill">
+                            <img src="images/java.png">
+                            <strong>Java</strong>
+                        </div>
+                        <div class="skill">
+                            <img src="images/go.png">
+                            <strong>GoLang</strong>
+                        </div>
+                        <div class="skill">
+                            <img src="images/c-sharp.png">
+                            <strong>C#</strong>
+                        </div>
+                        <div class="skill">
+                            <img src="images/dot-net.png">
+                            <strong>Asp.Net</strong>
+                        </div>
+                        <div class="skill">
+                            <img src="images/api.png">
+                            <strong>Web API</strong>
+                        </div>
+                        <div class="skill">
+                            <img src="images/spring.png">
+                            <strong>Spring</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>Web Technologies</h3>
+                    <hr>
+                    <div class="skills">
+                        <div class="skill">
+                            <img src="images/angular.png">
+                            <strong>Angular</strong>
+                        </div>
+                        <div class="skill">
+                            <img src="images/nodejs.png">
+                            <strong>Nodejs</strong>
+                        </div>
+                        <div class="skill">
+                            <img src="images/jquery.png">
+                            <strong>jQuery</strong>
+                        </div>
+                        <div class="skill">
+                            <img src="images/html5.png">
+                            <strong>Html5</strong>
+                        </div>
+                        <div class="skill">
+                            <img src="images/css3.png">
+                            <strong>CSS</strong>
+                        </div>
+                        <div class="skill">
+                            <img src="images/bootstrap.png">
+                            <strong>Bootstrap</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>Tools</h3>
+                    <hr>
+                    <div class="skills">
+                        <div class="skill">
+                            <img src="images/eclipse.png">
+                            <strong>Eclipse</strong>
+                        </div>
+                        <div class="skill">
+                            <img src="images/Visual_Studio_2017_Logo.svg">
+                            <strong>Visual Studio</strong>
+                        </div>
+                        <div class="skill">
+                            <img src="images/ms-sql.png">
+                            <strong>MsSQL</strong>
+                        </div>
+                        <div class="skill">
+                            <img src="images/mysql.png">
+                            <strong>MySQL</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>Database</h3>
+                    <hr>
+                    <div class="skills">
+                        <div class="skill">
+                            <img src="images/mongodb.png">
+                            <strong>MongoDB</strong>
+                        </div>
+                        <div class="skill">
+                            <img src="images/postgresql.png">
+                            <strong>PostgreSQL</strong>
+                        </div>
+                        <div class="skill">
+                            <img src="images/ms-sql.png">
+                            <strong>MsSQL</strong>
+                        </div>
+                        <div class="skill">
+                            <img src="images/mysql.png">
+                            <strong>MySQL</strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>Other</h3>
+                    <hr>
+                    <div class="skills">
+                        <div class="skill">
+                            <img src="images/Amazon_Web_Services_Logo.svg">
+                            <strong>AWS</strong>
+                        </div>
+                        <div class="skill">
+                            <img src="images/Jenkins_logo.svg">
+                            <strong>Jenkins</strong>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
+
+    <!-- PROFESSIONAL EXPERIENCE -->
+    <section id="professional-experience" class="site-main">
+        <div class="site-main-inner">
+            <div class="main-section portfolio-section">
+                <h1 class="main-title">Professional Experience</h1> <br />
+                <div class="timeline portfolio-timeline">
+                    <ul>
+                        <li class="timeline_element timeline_element--now project">
+                            <div class="timeline_element-date">
+                                <time class="timeline_element-date-text">Jul 2019- Now</time>
+                            </div>
+                            <div class="timeline_element-contents">
+                                <div class="project-text">
+                                    <a href="https://www.casenetllc.com/" target="_blank" class="project-link">
+                                        <div class="project-title">Casenet LLC, Bedford, MA</div>
+                                        <div class="project-subtitle">DevOps Engineer</div>
+                                    </a>
+                                    <div class="project-description">
+                                        <p><strong>Tripsomnia is a web platform that allows to book and sell local tours and tourist attractions all over the world. It serves both as:</strong></p>
+
+                                        <ul>
+                                            <li>a SaaS platform for tour operators and activity providers, to manage their offers, customers, orders, and agents cooperation,</li>
+                                            <li>a marketplace for end-customers to book the local tours and activities while or before the travelling.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline_element timeline_element--now project">
+                            <div class="timeline_element-date">
+                                <time class="timeline_element-date-text">Jun 2018- Aug 2018</time>
+                            </div>
+
+                            <div class="timeline_element-contents">
+                                <div class="project-text">
+                                    <a href="https://www.monster.com/about/" target="_blank" class="project-link">
+                                        <div class="project-title">Monster Worldwide, Weston, MA</div>
+                                        <div class="project-subtitle">Software Engineer Intern</div>
+                                    </a>
+                                    <div class="project-description">
+                                        <p><strong>Release Automation Team</strong></p>
+                                        <ul>
+                                            <li>Automated the process of invalidating the Amazon Machine Images using Web API with Test-driven development</li>
+                                            <li>Designed an interface to view, multi-select CloudFormation Stacks and invalidate the images</li>
+                                            <li>Implemented the real-time update for the CloudFormation Stacks status using SignalR</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline_element timeline_element--now project">
+                            <div class="timeline_element-date">
+                                <time class="timeline_element-date-text">2013 – 2017</time>
+                            </div>
+                            <div class="timeline_element-contents">
+                                <div class="project-text">
+                                    <a href="https://www.tcs.com/" target="_blank" class="project-link">
+                                        <div class="project-title">Tata Consultancy Services, Pune, INDIA</div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline_element timeline_element--now project">
+                            <div class="timeline_element-date">
+                                <time class="timeline_element-date-text">Mar 2014 – Jul 2017</time>
+                            </div>
+
+                            <div class="timeline_element-contents" style="border-top: 0;">
+                                <div class="project-text">
+                                    <div class="project-subtitle">Information Technology Analyst (.Net developer)</div>
+                                    <div class="project-description">
+                                        <p><strong>United Airlines</strong></p>
+                                        <ul>
+                                            <li>Supervised the team, held code reviews, met deadlines and successfully achieved 99% customer satisfaction</li>
+                                            <li>Proposed and implemented automation of status report generation and submission to reduce time-effort by ~20%</li>
+                                            <li>Implemented account level process improvement for automating the desktop time zone to Central Standard Time</li>
+                                            <li>Automated email sending service for timesheet filling, daily tracker, and leave updates</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline_element timeline_element--now project">
+                            <div class="timeline_element-date">
+                                <time class="timeline_element-date-text">Jun 2013 – Mar 2014</time>
+                            </div>
+
+                            <div class="timeline_element-contents">
+                                <div class="project-text">
+                                    <div class="project-subtitle">System Engineer (.NET developer)</div>
+                                    <div class="project-description">
+                                        <p><strong>British Gas: Queensland Gas Company (QGC)</strong></p>
+                                        <ul>
+                                            <li>Automated the manual task of repetitive searching of data from Big Data, thus reducing the lead time</li>
+                                            <li>Submitted business proposal for developing a user interface to directly enter oilfield data and inserting them into the database,
+                                                reducing the manual data entry efforts hence reducing manual efforts by ~30%</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </body>
 

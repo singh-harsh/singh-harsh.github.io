@@ -1,17 +1,9 @@
-html {
-    scroll-behavior: smooth;
-}
-
 .fa, .fa-stack {
     display: inline-block
 }
 
 .fa-fw, .fa-li, .icon {
     text-align: center
-}
-
-.main-navigation ul, .site-sidebar .posts-list, .tech-icons, .tech-tags, .timeline>ul {
-    /* list-style:none */
 }
 
 @font-face {
@@ -2783,10 +2775,6 @@ blockquote {
     color: #fff
 }
 
-body {
-    /* background: #f6f6f6 */
-}
-
 @media screen and (max-width:1000px) {
     body {
         background: #fff
@@ -3984,7 +3972,7 @@ body.cv {
 
 @media screen and (max-width: 450px) {
     .skills img {
-        height: 45px;
+        height: 40px;
     }
 }
 
@@ -4005,7 +3993,7 @@ section {
     height: 100vh;
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1200px) {
     #education {
         height: auto;
     }
