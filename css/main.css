@@ -2620,11 +2620,7 @@ hr {
 
 @media screen and (max-width: 1000px) {
     .dl-vertical dd {
-        width: 250px;
-        word-break: break-word;
-    }
-    .dl-vertical dt {
-        width: 100px
+        width: 256px;
     }
 }
 
