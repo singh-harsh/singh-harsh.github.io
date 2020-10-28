@@ -2618,6 +2618,16 @@ hr {
     margin: 0
 }
 
+@media screen and (max-width: 1000px) {
+    .dl-vertical dd {
+        width: 250px;
+        word-break: break-word;
+    }
+    .dl-vertical dt {
+        width: 100px
+    }
+}
+
 .dl-vertical.dl-long dt {
     width: 350px
 }
